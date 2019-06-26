@@ -1,3 +1,6 @@
+package com.crypto;
+
+import com.crypto.ROT13;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -63,6 +66,7 @@ public class ROT13Test {
         String actual = cipher.encrypt(Q1);
         System.out.println(Q1);
         System.out.println(A1);
+
         // Then
         assertTrue(actual.equals(A1));
 
@@ -80,6 +84,7 @@ public class ROT13Test {
 
         String Q1 = "Why did the chicken cross the road?";
         System.out.println(Q1);
+        System.out.println(cipher.crypt(Q1));
 
         // When
         String actual = cipher.crypt(cipher.crypt(Q1));
